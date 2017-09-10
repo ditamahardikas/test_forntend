@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html style="height: auto;"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title></title>
+	 <link href="bensin_files/bootstrap.css" rel="stylesheet">
+    
+	<link rel="stylesheet" href="bensin_files/font-awesome.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="bensin_files/ionicons.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="bensin_files/AdminLTE.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="bensin_files/_all-skins.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="bensin_files/blue.css">
+  <!-- Morris chart -->
+  <link rel="stylesheet" href="bensin_files/morris.css">
+  <!-- jvectormap -->
+  <link rel="stylesheet" href="bensin_files/jquery-jvectormap-1.css">
+  <!-- Date Picker -->
+  <link rel="stylesheet" href="bensin_files/datepicker3.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="bensin_files/daterangepicker.css">
+  <!-- bootstrap wysihtml5 - text editor -->
+  <link rel="stylesheet" href="bensin_files/bootstrap3-wysihtml5.css">
+  <!--ion slider-->
+  <link rel="stylesheet" href="bensin_files/ion_002.css">
+  <link rel="stylesheet" href="bensin_files/ion.css">
+  <link rel="stylesheet" href="bensin_files/slider.css">
+  <link rel="stylesheet" href="bensin_files/dataTables.css">
+  <style>.cke{visibility:hidden;}</style></head>
+
+
+<body style="height: auto;">
+ <div class="container">
+ 	<div class="col-md-12">
+ 		<div class="col-md-4">
+ 			
+ 		</div>
+ 		<div class="col-md-4">
+ 			<div class="box box-warning box-solid">
+            <div class="box-header with-border">
+              <h3 class="box-title">isi bensi</h3>
+
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                </button>
+              </div>
+              <!-- /.box-tools -->
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body	">
+	            <div>
+	              <label>Premium (Rp. 7000)</label>
+	              <input class="from-control" id="premium" placeholder="Jumlah liter" value="2">
+	            </div>
+	            <br>
+	             <div>
+	              <label>Pertalite (Rp. 7500)</label>
+	              <input class="from-control" id="pertalite" placeholder="Jumlah liter" value="3">
+	            </div>
+	            <br>
+	             <div>
+	              <label>Pretamax (Rp. 8000)</label>
+	              <input class="from-control" id="pertamak" placeholder="Jumlah liter" value="4">
+	            </div>
+	            <br>
+	             <div>
+	              <label>Bayar</label>
+	              <input class="from-control" id="total" placeholder="Total bayar" value="68500">
+	            </div>
+	            <button class="btn btn-primary" onclick="total()"> Jumlah</button>
+            </div>
+            <!-- /.box-body -->
+          </div>
+ 		</div>
+ 		<div class="col-md-4">
+ 			
+ 		</div>
+ 		
+ 	</div>
+
+ </div>
+ <script type="text/javascript">
+ 	function total() {
+        var pertamak = document.getElementById("pertamak").value;
+        var premium = document.getElementById("premium").value;
+        var pertalite = document.getElementById("pertalite").value;
+        var count = (premium*7000) + (pertalite*7500)  + (pertamak*8000);
+        var total = document.getElementById("total").value=count;
+}
+ </script>
+
+<script src="bensin_files/jquery-2.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="bensin_files/bootstrap.js"></script>
+<!-- FastClick -->
+<script src="bensin_files/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="bensin_files/app.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="bensin_files/demo.js"></script>
+<!-- CK Editor -->
+<script src="bensin_files/ckeditor.js"></script>
+<!-- Bootstrap WYSIHTML5 -->
+<script src="bensin_files/bootstrap3-wysihtml5.js"></script>
+ <script src="bensin_files/dataTables.js"></script>
+</body></html>
